@@ -1,0 +1,17 @@
+' ******************************************************************************
+' swxJRNL.swj - journal recorded on 07/03/13 by cem
+' *****************************************************************************
+Dim swApp As Object
+
+Dim Part As Object
+Dim boolstatus As Boolean
+Dim longstatus As Long, longwarnings As Long
+
+Sub main()
+
+Set swApp = _
+Application.SldWorks
+
+Set Part = swApp.OpenDoc6("C:\Users\cem\Desktop\CEM\Robotik\solid\faullhaber\asd.SLDASM", 2, 0, "", longstatus, longwarnings)
+swApp.ExitApp
+End Sub
